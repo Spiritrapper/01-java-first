@@ -1,4 +1,4 @@
-class Solution {
+class Solution7{
     public int solution(int angle) {
         switch (angle) {
             case 0< angle <90 :
@@ -11,7 +11,7 @@ class Solution {
                 return 4;
     }
     public static void main (String[] args){
-            Solution s = new Solution();
+            Solution7 s = new Solution7();
             double angle = 95.5;
             int result = s.solution(angle);
             System.out.println(result);
