@@ -10,7 +10,7 @@ class Solution {
 
     public static void main(String[] args) {
         Solution s = new Solution();
-        int[] numbers1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] numbers1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         double result1 = s.solution(numbers1);
         System.out.println(result1);
 
