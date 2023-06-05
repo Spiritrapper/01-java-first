@@ -4,6 +4,7 @@ class Solution13 {
         int paperLength = 2 * massageLength;
         return 2 * massageLength;
     }
+
     public static void main(String[] args) {
         Solution13 s = new Solution13();
         String message = "happy birthday!";
