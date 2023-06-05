@@ -1,6 +1,6 @@
 class Solution16 {
     public int[] solution(int money) {
-        int money = 0;
+
         int americanoPrice = 5500;
         int americanoDrinking = money / americanoPrice;
         int restMoney = money / americanoPrice;
