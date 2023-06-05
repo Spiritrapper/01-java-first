@@ -8,7 +8,7 @@ class Solution14 {
 
         // 각 원소의 길이를 구하여 answer 배열에 저장
         for (int i = 0; i < strlist.length; i++) {
-            answer[i] = strlist[i].length();    // 예를 들으면 strlist[1] 은 3이라는 원소값를갖는다.
+            answer[i] = strlist[i].length();    // 각원소의 길이 , 예를 들으면 strlist[1] 은 3이라는 원소값를갖는다.
         }
 
         // 결과 배열 반환
@@ -35,12 +35,24 @@ class Solution14 {
 
 public class _14_배열원소의길이 {
 }
-class Solution {
-    public int[] solution(String[] strlist){
+class Solution9 {
+    public int[] solution(String[] strlist) {
         int[] answer = new int[strlist.length];
-        for (int i = 0; i < ; i++) {
+        for (int i = 0; i < strlist.length; i++) {
+            answer[i] = strlist[i].length();
 
         }
+        return answer;
 
+    }
+
+    public static void main(String[] args) {
+        Solution9 s = new Solution9();
+        String[] strlist1 = {"We", "are", "the", "world!"};
+        int[] result = s.solution(strlist1);
+        for (int length : result) {
+            System.out.print(length + " ");
+
+        }
     }
 }
