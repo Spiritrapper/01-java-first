@@ -1,24 +1,10 @@
-class Solution15 {
+class Solution {
     public int solution(int slice, int n) {
-        int minPans = 0; // 최소 판수를 저장할 변수
-
-        // 한 판에 나눠지는 피자 조각 수가 n보다 작을 경우
-        if (slice < n) {
-            minPans = n / slice; // 최소 판수는 n을 slice로 나눈 몫
-            if (n % slice != 0) {
-                minPans++; // 남은 조각이 있을 경우 판수 1 증가
-            }
-        }
-        // 한 판에 나눠지는 피자 조각 수가 n보다 크거나 같을 경우
-        else {
-            minPans = 1; // 최소 판수는 1
-        }
-
-        return minPans;
+        return (n % slice == 0) ? (n / slice) : (n / slice + 1);
     }
 
     public static void main(String[] args) {
-        Solution15 solution = new Solution15();
+        Solution solution = new Solution();
 
         int slice1 = 7;
         int n1 = 10;
