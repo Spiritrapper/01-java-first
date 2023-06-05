@@ -1,8 +1,8 @@
 class Solution13 {
     public int solution(String message) {
         int massageLength = message.length();
-        int paperLength = 2 * massageLength+2;
-        return 2 * massageLength+2;
+        int paperLength = 2 * massageLength;
+        return 2 * massageLength;
     }
 
     public static void main(String[] args) {
