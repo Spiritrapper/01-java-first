@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Solution24 {
     public String solution(String my_string) {
         StringBuilder result = new StringBuilder(); // 결과를 저장할 StringBuilder 객체 생성
