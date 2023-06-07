@@ -4,9 +4,10 @@ class Solution27 {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < my_string.length(); i++) {
             char c = my_string.charAt(i);
-            if (c != letter.charAt(0)) {
-                result.append(c);
+            if (c == letter.charAt(0)) {
+                continue;
             }
+            result.append(c);
         }
         return result.toString();
     }
@@ -24,7 +25,6 @@ class Solution27 {
         System.out.println(result2);  // 출력: "Cdbe"
     }
 }
-
 
 public class _27_특정문자제거 {
 }
