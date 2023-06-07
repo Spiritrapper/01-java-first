@@ -20,5 +20,5 @@ class Solution22 {
     }
 }
 
-public class _22_문자열뒤집기 {
+public class _22_배열뒤집기 {
 }
