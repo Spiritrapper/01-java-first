@@ -1,25 +1,30 @@
+
 class Solution31 {
     public int solution(int n) {
-        int sum = 0;
-
-        // 정수 n의 각 자릿수를 더합니다.
-        while (n >0) {
-            sum += n % 10; // n의 임의 자리 숫자를 더합니다.
-            n /= 10;       // n울 10으로 나누어 다음 자릿수로 이동합니다.
+        String numString = String.valueOf(n); // 정수 n을 문자열로 변환
+        int[] digits = new int[numString.length()]; // 자리 숫자를 저장할 배열생성
+        for (int i = 0; i < numString.length(); i++) {
+            digits[i] = Character.getNumericValue(numString.charAt(i));
         }
-
+        int sum = 0;
+        for (int digit : digits) {
+            sum += digit;
+        }
         return sum;
-
     }
 
     public static void main(String[] args) {
         Solution31 s = new Solution31();
-        int n1 =12345;
-        int result = s.solution(n1);
-        System.out.println(result);
+        // Example test cases
+        int n1 = 1234;
+        int result1 = s.solution(n1);
+        System.out.println(result1); // Expected: 10
+
+        int n2 = 930211;
+        int result2 = s.solution(n2);
+        System.out.println(result2); // Expected: 16
     }
 }
-
 
 
 
