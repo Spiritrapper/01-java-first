@@ -2,7 +2,7 @@ import java.util.Arrays;
 class Solution23 {
     public int solution(int[] numbers) {
         Arrays.sort(numbers);
-        int answer = numbers[numbers.length] * numbers[numbers.length-1];
+        int answer = numbers[numbers.length -1] * numbers[numbers.length-2];
         return answer;
     }
 
