@@ -4,12 +4,12 @@ class Solution34 {
         String[] words = my_string.split("");
 
         for (int i = 0; i < words.length; i++) {
-            if (!words[i].equals("")) {
+            if (!words[i].equals(" ")) {            // 즉, 빈 문자열 대신 공백 문자열로 비교
                 try {
                     int n = Integer.parseInt(words[i]);
                     sum += n;
                 } catch (NumberFormatException e) {
-                    return 0;
+                    sum += 0;                       // return 대신 sum : 숫자가 아니어도 합산진행
                 }
             }
         }
