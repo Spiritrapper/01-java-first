@@ -1,19 +1,19 @@
 class Solution34 {
     public int solution(String my_string) {
-        int sum = 0;
-        String[] words = my_string.split("");
+        int sum = 0; // 합계를 저장할 변수
+        String[] words = my_string.split(""); // 문자열을 한 글자씩 나눠서 배열에 저장
 
         for (int i = 0; i < words.length; i++) {
-            if (!words[i].equals(" ")) {            // 즉, 빈 문자열 대신 공백 문자열로 비교
+            if (!words[i].equals(" ")) { // 공백 문자가 아닌 경우에만 처리
                 try {
-                    int n = Integer.parseInt(words[i]);
-                    sum += n;
+                    int n = Integer.parseInt(words[i]); // 문자열을 정수로 변환
+                    sum += n; // 합계에 정수값 더하기
                 } catch (NumberFormatException e) {
-                    sum += 0;                       // return 대신 sum : 숫자가 아니어도 합산진행
+                    sum += 0; // 숫자로 변환할 수 없는 경우에는 0을 더해도 변화 없음
                 }
             }
         }
-        return sum;
+        return sum; // 최종 합계 반환
     }
 
     public static void main(String[] args) {
@@ -28,7 +28,6 @@ class Solution34 {
         System.out.println(result2); // 16
     }
 }
-
 
 
 
