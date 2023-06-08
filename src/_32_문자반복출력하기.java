@@ -6,11 +6,11 @@ class Solution32 {
 
         for (int i = 0; i < myString.length(); i++) {
             // 문자열 길이만큼 반복
-//            for (int j = 0; j < n; j++) {
+          for (int j = 0; j < n; j++) {
                 // n번 반복
                 result.append(myString.charAt(i));
                 // 문자를 StringBuilder에 추가
-//            }
+           }
         }
         return result.toString();
         // StringBuilder를 문자열로 변환하여 반환
