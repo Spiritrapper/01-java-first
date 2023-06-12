@@ -1,7 +1,9 @@
 class Solution41 {
     public int solution(int[] box, int n) {
-        int[] boxx = {horison,vertical,height};
-        int answer = h/n * v/n * height/n;
+        int horison = box[0];
+        int vertical = box[1];
+        int height = box[2];
+        int answer = (box[0]/n) * (box[1]/n) * (box[2]/n);
         return answer;
     }
     public static void main(String[] args) {
