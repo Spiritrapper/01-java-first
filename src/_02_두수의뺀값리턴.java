@@ -14,5 +14,6 @@ public class _02_두수의뺀값리턴 {
         int num4 = 2;
         int result2 = solution(num3, num4);
         System.out.println(result2); // 출력: 98
+
     }
 }
