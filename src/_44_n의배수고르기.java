@@ -1,7 +1,7 @@
+import java.util.Arrays;
 class Solution44 {
     public int[] solution(int n, int[] numlist) {
-        int n = 0;
-        count = 0; // n으로 나누어 떨어지는 숫자의 개수를 저장하기 위한 변수
+        int count = 0; // n으로 나누어 떨어지는 숫자의 개수를 저장하기 위한 변수
         for (int i = 0; i < numlist.length; i++) {
             if (numlist[i] % n == 0) {
                 count++;
@@ -22,10 +22,10 @@ class Solution44 {
     }
     public static void main(String[] args) {
         Solution44 s = new Solution44();
-        n = 3;
+        int n = 3;
         int [] numlist1 = {4, 5, 6, 7, 8, 9, 10, 11, 12};
         int [] result1 = s.solution(3, numlist1);
-        System.out.println(result1);
+        System.out.println(Arrays.toString(result1));
         
     }
 }
